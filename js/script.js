@@ -1,10 +1,8 @@
-let btnRight = document.querySelector(".btnRight")
-
 let slides = document.querySelectorAll("img")
 
 let i = 0
 
-btnRight.addEventListener("click", function () {
+document.querySelector(".btnNext").onclick = (event) =>{
 	i++
 	
 	if (i >= slides.length) {
@@ -19,4 +17,4 @@ btnRight.addEventListener("click", function () {
 
 		slides[i].classList.add("block")
 	}
-})
+}
