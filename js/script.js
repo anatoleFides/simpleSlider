@@ -36,18 +36,13 @@ function playSlideshow () {
   showSlide()
 }
 
-pauseButton.onclick = function () {
-  playing ? stopSlideshow() : playSlideshow()
-}
+pauseButton.onclick = () => playing ? stopSlideshow() : playSlideshow()
 
-const next = document.getElementById('next')
-const previous = document.getElementById('previous')
-
-next.onclick = function (event) {
+document.getElementById('next').onclick = event => {
   stopSlideshow()
   clickNextSlide()
 }
-previous.onclick = function (event) {
+document.getElementById('previous').onclick = event => {
   stopSlideshow()
   clickPreviousSlide()
 }
