@@ -3,20 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Simple Slider any JS</title>
+	<title>Slide in JS</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-		<h2>Slider 1</h2>
-		<div id="slider1">
-			<img src="img/image1.jpg" class="block" alt="">
-			<img src="img/image2.jpg" alt="">
-			<img src="img/image3.jpg" alt="">
-			<img src="img/image4.jpg" alt="">
-			<img src="img/image5.jpg" alt="">
+		<ul id="slides">
+			<li class="slide showing"></li>
+			<li class="slide"></li>
+			<li class="slide"></li>
+			<li class="slide"></li>
+			<li class="slide"></li>
+			<li class="slide"></li>
+		</ul>
+		<div class="buttons">
+			<button class="navigation" id="previous">&lt;</button>
+			<button class="navigation" id="pause">&#10074;&#10074;</button>
+			<button class="navigation" id="next">&gt;</button>
 		</div>
-		<button class="btnNext">Next</button>
 	</div>
 	<script src="js/script.js"></script>
 </body>

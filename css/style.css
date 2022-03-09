@@ -1,0 +1,90 @@
+/*
+essential styles:
+these make the slideshow work
+*/
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#slides{
+  width: 600px;
+  position: relative;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.slide{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.showing{
+  opacity: 1;
+  z-index: 2;
+}
+
+.buttons{
+  padding: 16px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation{
+  display: block;
+  padding: 8px 10px;
+  text-align: center;
+  color: #c51;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 12px 0 0;
+}
+.navigation:nth-child(2){
+  font-size: 14px;
+  padding: 8px;
+}
+.navigation:last-child{
+  margin: 0;
+}
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: 0 bottom;
+}
+
+.slide:nth-child(1){
+  background-image: url('../image/image_01.JPG');
+}
+.slide:nth-child(2){
+  background-image: url('../image/image_02.JPG');
+}
+.slide:nth-child(3){
+  background-image: url('../image/image_03.JPG');
+}
+.slide:nth-child(4){
+  background-image: url('../image/image_04.JPG');
+}
+.slide:nth-child(5){
+  background-image: url('../image/image_05.JPG');
+}
+.slide:nth-child(6){
+  background-image: url('../image/image_06.JPG');
+}
