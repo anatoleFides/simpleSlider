@@ -11,10 +11,11 @@ these make the slideshow work
 #slides{
   width: 600px;
   position: relative;
-  height: 300px;
+  height: 350px;
   padding: 0;
   margin: 0;
   list-style-type: none;
+  overflow: hidden;
 }
 
 .slide{
@@ -64,27 +65,14 @@ non-essential styles:
 just for appearance; change whatever you want
 */
 
-.slide{
+/*.slide{
   box-sizing: border-box;
   background-size: cover;
   background-position: 0 bottom;
-}
+}*/
 
-.slide:nth-child(1){
-  background-image: url('../image/image_01.JPG');
-}
-.slide:nth-child(2){
-  background-image: url('../image/image_02.JPG');
-}
-.slide:nth-child(3){
-  background-image: url('../image/image_03.JPG');
-}
-.slide:nth-child(4){
-  background-image: url('../image/image_04.JPG');
-}
-.slide:nth-child(5){
-  background-image: url('../image/image_05.JPG');
-}
-.slide:nth-child(6){
-  background-image: url('../image/image_06.JPG');
+.slide img {
+  display: block;
+  max-width: 100%;
+
 }
