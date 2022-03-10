@@ -25,13 +25,15 @@ showSlide()
 const pauseButton = document.getElementById('pause')
 
 function stopSlideshow () {
-  pauseButton.innerHTML = '&#9658;' // play character
+  pauseButton.classList.remove('icon-pause')
+  pauseButton.classList.add('icon-play')
   playing = false
   clearTimeout(goSlideShow)
 }
 
 function playSlideshow () {
-  pauseButton.innerHTML = '&#10074;&#10074;' // pause character
+  pauseButton.classList.remove('icon-play')
+  pauseButton.classList.add('icon-pause')
   playing = true
   showSlide()
 }
@@ -46,4 +48,3 @@ document.getElementById('previous').onclick = event => {
   stopSlideshow()
   clickPreviousSlide()
 }
-

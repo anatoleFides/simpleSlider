@@ -1,22 +1,10 @@
 @font-face {
-  font-family: 'icons';
-  src:  url('../fonts/icons.eot?m13xeo');
-  src:  url('../fonts/icons.eot?m13xeo#iefix') format('embedded-opentype'),
-    url('../fonts/icons.ttf?m13xeo') format('truetype'),
-    url('../fonts/icons.woff?m13xeo') format('woff'),
-    url('../fonts/icons.svg?m13xeo#icons') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: 'icons';
-  src:  url('fonts/icons.eot?aptnet');
-  src:  url('fonts/icons.eot?aptnet#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?aptnet') format('truetype'),
-    url('fonts/icons.woff?aptnet') format('woff'),
-    url('fonts/icons.svg?aptnet#icons') format('svg');
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?aptnet');
+  src:  url('../fonts/icomoon.eot?aptnet#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?aptnet') format('truetype'),
+    url('../fonts/icomoon.woff?aptnet') format('woff'),
+    url('../fonts/icomoon.svg?aptnet#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,8 +12,8 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icons' !important;
-  speak: never;
+  font-family: 'icomoon';
+  /*speak: never;*/
   font-style: normal;
   font-weight: normal;
   font-variant: normal;

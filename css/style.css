@@ -1,21 +1,30 @@
 @import url('icons.css');
 
-.container {
+body {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+}
+.container {
+  width: 600px;
+  position: relative;
+
+  text-align: center;
+}
+.container:hover .buttons{
+  visibility: visible;
+  opacity: 1;
+  transition: all .6s ease;
 }
 #slides{
   width: 600px;
-  position: relative;
   height: 350px;
+  position: relative;
   padding: 0;
   margin: 0;
   list-style-type: none;
   overflow: hidden;
 }
-
 .slide{
   position: absolute;
   left: 0;
@@ -24,43 +33,51 @@
   height: 100%;
   opacity: 0;
   z-index: 1;
-
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
-
+.slide img {
+  display: block;
+  max-width: 100%;
+}
 .showing{
   opacity: 1;
   z-index: 2;
 }
 
-.buttons{
-  padding: 16px 0 0 0;
+ /*NAVIGATION*/
+ .buttons{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 5;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  transition: all .6s ease;
 }
 .navigation{
   display: block;
-  padding: 8px 10px;
+  padding: 0;
   text-align: center;
-  color: #c51;
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0 12px 0 0;
-}
-.navigation:nth-child(2){
-  font-size: 14px;
-  padding: 8px;
+  color: rgba(169, 169, 169, 0.6);
+  font-size: 80px;
+  border: none;
+  background: transparent;
+  transition: all .6s ease;
 }
 .navigation:last-child{
   margin: 0;
 }
-
-.slide img {
-  display: block;
-  max-width: 100%;
-
+.navigation:hover {
+  color: #fff;
+  transition: all .6s ease;
+}
+.navigation:nth-child(2) {
+  font-size: 100px;
 }
